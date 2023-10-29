@@ -14,6 +14,13 @@ const Home = () => {
       <span>
         <img alt="movie" className="ImageSmall" src={flower} />
       </span>
+      <br />
+      <SpanSmall>
+        Welcome!
+        <br />
+        Please Check out Current Movies at ODEON, Book a Movie Ticket or Write a
+        Movie Review ...
+      </SpanSmall>
     </div>
   );
 };
