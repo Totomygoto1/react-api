@@ -1,6 +1,7 @@
 import './../App.css';
 import flower from './../images/flower5.jpg';
 import { useState, useEffect } from 'react';
+import { SpanSmall } from './../styles/Styles.js';
 
 const Home = () => {
   return (
