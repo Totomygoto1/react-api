@@ -24,11 +24,10 @@ const MovieData3 = () => {
   const [imageurl, setImageurl] = useState('');
 
   let [showTrailer, setshowTrailer] = useState(false);
-  let movie = 'Lord of the Rings: Fellowship of the Ring';
+  let movie = 'The Lord of the Rings: The Return of the King';
   let price = 12.95;
   let movieId = '122';
   let index = 2;
-  let [title, setTitle] = useState('Lord of the Rings: Fellowship of the Ring');
 
   useMemo(async () => {
     let apikey = 'e616baa2599897c3606e114b8e44d308';
@@ -39,8 +38,8 @@ const MovieData3 = () => {
       .get(baseURL)
 
       .then((response) => {
-        setOverview(response.data.results[0].overview);
-        setImageurl(response.data.results[0].poster_path);
+        setOverview(response.data.results[2].overview);
+        setImageurl(response.data.results[2].poster_path);
 
         console.log(JSON.stringify(response.data, null, 2));
       })

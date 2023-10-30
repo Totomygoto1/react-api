@@ -24,13 +24,11 @@ const MovieData1 = () => {
   const [imageurl, setImageurl] = useState('');
 
   let [showTrailer, setshowTrailer] = useState(false);
-  let movie = 'The Lord of the Rings: The Return of the King';
+  let movie = 'Lord of the Rings: Fellowship of the Ring';
   let price = 14.95;
   let movieId = '120';
   let index = 2;
-  let [title, setTitle] = useState(
-    'The Lord of the Rings: The Return of the King',
-  );
+  let [title, setTitle] = useState('Lord of the Rings: Fellowship of the Ring');
 
   useMemo(async () => {
     let apikey = 'e616baa2599897c3606e114b8e44d308';

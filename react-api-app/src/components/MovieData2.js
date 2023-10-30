@@ -39,8 +39,8 @@ const MovieData2 = () => {
       .get(baseURL)
 
       .then((response) => {
-        setOverview(response.data.results[2].overview);
-        setImageurl(response.data.results[2].poster_path);
+        setOverview(response.data.results[0].overview);
+        setImageurl(response.data.results[0].poster_path);
 
         console.log(JSON.stringify(response.data, null, 2));
       })
