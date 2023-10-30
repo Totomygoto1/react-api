@@ -28,6 +28,7 @@ const MovieData3 = () => {
   let price = 12.95;
   let movieId = '122';
   let index = 2;
+  let [title, setTitle] = useState('The Lord of the Rings: The Return of the King');
 
   useMemo(async () => {
     let apikey = 'e616baa2599897c3606e114b8e44d308';
